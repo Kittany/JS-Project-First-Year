@@ -1,0 +1,279 @@
+html , body {
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow : hidden;
+    user-select: none;
+}
+
+.navbar-nav a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+.nav-link p {
+    padding-top: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: goldenrod !important;
+    transition: 2s;
+    border-color: white;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+
+.navbar-dark .navbar-toggler
+{
+  background: #202020;
+
+}
+
+
+/*Page starts here*/
+
+
+body {
+    background-image: url(/lib/images/AdminPage/Background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+#navigatorDiv
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* Profile div */
+#profile {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 15%;
+    height: 80%;
+    opacity: 0.9;
+    border: silver 1px solid;
+    }
+
+.profile-content {
+    padding: 20px;
+    background: #202020;
+    border-radius: 30px;
+}
+
+/* Profile sidebar */
+
+#profile-sidebar {
+    background: #202020;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+#mainDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+}
+
+#username {
+    color: goldenrod;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    height: 30%;
+}
+
+#status {
+    text-transform: uppercase;
+    color: #5b9bd1;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    height: 30%;
+    cursor: pointer;
+}
+#button
+{
+    font-weight: bold;
+}
+
+
+#accountDetails
+{
+    width: 100%;
+    height: 40%;
+    margin-top: 15px;
+
+}
+
+#details
+{
+    color: goldenrod;
+    font-size: 17px;
+    font-family: monospace;
+    font-weight: bold;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+
+}
+
+
+/*Post*/
+
+#membersContainer
+{
+width: 100%;
+height: 80%;
+margin: 0;
+opacity: 0.9;
+border: silver 1px solid;
+}
+
+
+#postContainer
+{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+
+.profile-content3 {
+    margin-top: 5%;
+    padding: 20px;
+    background: #202020;
+    height: 40%;
+
+
+    
+}
+
+.title {
+    font-size: 20px;
+    color: white; 
+    font-family: monospace;
+    width: 100%;
+    height: 5%;
+}
+
+#membersList
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    width: 100%;
+    height: 95%;
+    margin: 0;
+    padding: 0;
+   
+}
+#membersList li
+{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#delUserButton
+{
+    width: 7%;
+    height: 30%;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#membersIMG
+{
+    width: 50px;
+    height: 50px;
+}
+
+/*Loading screen*/
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(25, 31, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+    background: black;
+}
+
+
+@keyframes fadeout {
+    100% {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+

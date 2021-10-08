@@ -1,0 +1,115 @@
+html {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/lib/images/signupPage/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#title {
+  color: white;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.nav-link {
+  padding: 0.2rem 1rem;
+  text-align: center;
+  color: rgb(63, 140, 99);
+  transition: color;
+  transition-duration: 2s;
+}
+
+.nav-link:hover {
+  color: goldenrod;
+}
+
+.signupcontainer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  opacity: 0.9;
+  width: 70%;
+  height: 80%;
+}
+
+.signup {
+  background: #131313;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  padding: 30px;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  grid-column-gap: 2%;
+}
+
+label {
+  color: white;
+}
+
+.navbar-light .navbar-toggler {
+  background: white;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+}
+
+.signup .avatar img {
+  width: 50%;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Loading screen*/
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/*JAVASCRIPT*/

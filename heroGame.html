@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <script src="lib/bootstrap/jquery-3.4.1.slim.min.js"></script>
+    <script src="lib/bootstrap/popper.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script defer src="JS/heroGame.js"></script>
+    <link rel="stylesheet" href="CSS/heroGame.css">
+</head>
+<body>
+   <!--Game starts here-->
+     <h1 id="title">A Hero's Adventure</h1>
+     <div id="background"></div>
+     <div id="container">
+         <div id="fade"></div>
+         <div id="gamePanel">
+             <div id="menuDiv">
+                 <div id="playerStats"></div>
+                 <div id="deathMessage">You've killed the hero and ruined the story with a score of  </div>
+                 <div id="optionDiv">
+                     <div id="playAgain" class="optionDesign">START A NEW ADVENTURE</div>
+                     <div id="leave" class="optionDesign">THE GAME IS BORING, YOUR BOY IS OUT</div>
+                 </div>
+             </div>
+             <div id="rankingDiv"><p id="rankingTitle">LEADERBOARDS</p>
+            <div id="playerHolder"></div></div>
+         </div>
+         <div id="callDragon">Call Dragon</div>
+         <div id="hud">
+          <div id="profileDetails"></img></div>
+         </div>
+         <div id="surface"></div>
+         <h1 id="scoreboard">0</h1>
+         <img id="character" src="lib/images/hakamsGame/character.gif">
+         <img id="dragon" src="lib/images/hakamsGame/dragon.gif">
+         <div class="enemy"> <img src="lib/images/hakamsGame/enemy.gif" width="300%" height="100%" alt=""></div>
+        </div>
+</body>
+</html>

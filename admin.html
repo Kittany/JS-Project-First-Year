@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="lib/images/AccountPage/avatar.png">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <script src="lib/bootstrap/jquery-3.4.1.slim.min.js"></script>
+    <script src="lib/bootstrap/popper.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merienda|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/animatecss/animate.css">
+    <link rel="stylesheet" href="CSS/admin.css">
+    <script defer src="JS/admin.js"></script>
+    <title>Administrator</title>
+</head>
+<body>
+    <div class="loader"><img src="lib/images/Gallery/loading.gif" alt="loading..."></div>
+    <!--Page starts here--> 
+    <nav class="navbar navbar-expand-lg navbar navbar-dark" id="navigatorDiv">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <li class="nav-item">
+                            <a class="nav-link" href="account.html">
+                                <p class="animated fadeIn">My Profile</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gamesMainMenu.html"> <!--FIX THIS-->
+                                <p class="animated fadeIn">Games</p>
+                            </a>
+                        </li>
+                        <a class="nav-link" href="accountsettingspage.html">
+                            <p class="animated fadeIn">My Account</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" id="signOut">
+                            <p class="animated fadeIn">Sign out</p>
+                        </a>
+                    </li>
+                </li>
+                </ul>
+            </div>
+    </nav>
+    <div id="container">
+        <div id="profile" class="animated fadeInLeft" style="animation-duration: 2s; animation-delay:1s;">
+        <div id="profile-sidebar"> 
+                        <img src="" class="img-responsive" alt="" id="profilePicture">
+                        <div id="mainDetails">
+                        <div id="username">
+                        </div>
+                        <div id="status">
+                        </div>
+                        <button type="button" class="btn btn-success btn-sm" id="button">Online</button>
+                        </div>
+                        <div id="accountDetails">
+                            <hr>
+                            <div id="details">
+                            </div>
+                        </div>
+
+        </div>
+    </div>
+
+    <div id="postContainer" class="animated fadeInRight" style="animation-duration: 4s; animation-delay: 2s;"> 
+    <div class="profile-content3" id="membersContainer">
+        <p class="title">Members in the community</p>
+        <ul id="membersList">
+        </ul>
+         <!--FINISH THIS-->
+    
+    </div>
+    </div>
+
+   <!--loading screen script-->
+   <script type="text/javascript">
+    window.addEventListener("load", function(){
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; //class "loader hidden"
+    } );
+    </script>
+
+
+
+    <script src="lib/animatescroll/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
+</body>
+</html>

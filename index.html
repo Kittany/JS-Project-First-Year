@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="lib/images/SigninPage/avatar.png" />
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css" />
+    <script src="lib/bootstrap/jquery-3.4.1.slim.min.js"></script>
+    <script src="lib/bootstrap/popper.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script defer src="JS/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda|Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="lib/animatecss/animate.css" />
+    <link rel="stylesheet" href="lib/animatescroll/aos.css" />
+    <title>Sign in</title>
+  </head>
+
+  <body>
+    <div class="loader">
+      <img src="lib/images/Gallery/loading.gif" alt="loading..." />
+    </div>
+    <!--Page starts here-->
+    <div class="signincontainer">
+      <form class="signin" action="account.html" class data-aos="fade-down">
+        <div class="avatar">
+          <img src="lib/images/SigninPage/avatar.png" />
+        </div>
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" class="form-control" required id="username" />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="password" />
+          <p id="errorMessage">Invalid username or password.</p>
+        </div>
+        <!--<button type="submit" class="btn btn-danger">Submit</button> <---Actual button-->
+        <button
+          type="button"
+          [disabled]="!ngForm.valid"
+          class="btn btn-success"
+          id="button"
+        >
+          Login
+        </button>
+        <a class="nav-link" href="signupPage.html">
+          <p class="animated fadeIn">
+            Don't have an account yet?
+          </p>
+        </a>
+      </form>
+    </div>
+
+    <!--loading screen script-->
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden"; //class "loader hidden"
+      });
+    </script>
+
+    <script src="lib/animatescroll/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="lib/images/signupPage/avatar.png" />
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css" />
+    <script src="lib/bootstrap/jquery-3.4.1.slim.min.js"></script>
+    <script src="lib/bootstrap/popper.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script defer type="module" src="JS/signupPage.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda|Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/signupPage.css" />
+    <link rel="stylesheet" href="lib/animatecss/animate.css" />
+    <link rel="stylesheet" href="lib/animatescroll/aos.css" />
+    <title>Sign up</title>
+  </head>
+
+  <body>
+    <div class="loader">
+      <img src="lib/images/Gallery/loading.gif" alt="loading..." />
+    </div>
+    <!--Page starts here-->
+    <p id="title" class data-aos="fade-down">
+      We're glad you made the right decision
+    </p>
+    <div class="signupcontainer">
+      <form class="signup" action="account.html" class data-aos="fade-down">
+        <div class="form-group">
+          <label>Username</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="What should we call you?"
+            required
+            id="username"
+          />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" required id="password" />
+          <small id="passwordHelp" class="form-text text-muted"
+          >Requirments: Must have at least one Special Character, Captial Letter, Number</small
+        >
+        </div>
+        <div class="form-group">
+          <label>Confirm Password</label>
+          <input
+            type="password"
+            class="form-control"
+            required
+            id="confirmPassword"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            aria-describedby="emailHelp"
+            required=""
+            id="email"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >Please make sure you type your email address correctly.</small
+          >
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please Fill Out This Feild.</div>
+        </div>
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" class="form-control" required id="firstName" />
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" class="form-control" required id="lastName" />
+        </div>
+        <div class="form-group">
+          <label>Birthdate</label>
+          <input type="date" class="form-control" required id="birthDate" />
+        </div>
+        <div class="form-group">
+          <label>City</label>
+          <input type="text" class="form-control" required id="city" list="cities"/>
+          <datalist id="cities">
+          </datalist>
+        </div>
+        <div class="form-group">
+          <label>Street</label>
+          <input type="text" class="form-control" required id="street" />
+        </div>
+        <div class="form-group">
+          <label>Phone number</label>
+          <input type="number" class="form-control" required id="phoneNumber" />
+          <small id="phoneHelp" class="form-text text-muted"
+            >05X-XXXXXXX</small
+          >
+        </div>
+        <!--<button type="submit" class="btn btn-danger">Submit</button> <---Actual button-->
+
+        <div id="button">
+          <button
+            type="button"
+            [disabled]="!ngForm.valid"
+            class="btn btn-danger"
+          >
+            Sign up
+          </button>
+          <a class="nav-link" href="index.html">
+            <p class="animated fadeIn">
+              Already have an account?
+            </p>
+          </a>
+        </div>
+        <div class="form-group">
+          <label>Upload a profile image</label>
+          <input type="file" class="form-control" id="profilePicture"/>
+          <small id="profilePictureHelp" class="form-text text-muted"
+          >Requirments: jpg or jpeg files only.</small>
+        </div>
+      </form>
+    </div>
+
+    <!--loading screen script-->
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden"; //class "loader hidden"
+      });
+    </script>
+
+    <script src="lib/animatescroll/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+      });
+    </script>
+  </body>
+</html>
